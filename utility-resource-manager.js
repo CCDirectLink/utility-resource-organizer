@@ -5,6 +5,11 @@ export default class UtilityResourceManager {
         this.keyListeners = new Map;
     }
 
+    /**
+     * 
+     * @param {string} key of target resource listener 
+     * @param {function} callback to send to resource listener
+     */
     async addResourceGenerator(key, callback) {
         if (!this.keys.has(key)) {
             this.keys.set(key, []);
@@ -14,6 +19,11 @@ export default class UtilityResourceManager {
         await this.callListeners(key, resourceDataCb);
     }
 
+    /**
+     * 
+     * @param {string} key of target resource listener
+     * @param {*} data to send to resource listener
+     */
     async addResourceData(key, data) {
         if (!this.keys.has(key)) {
             this.keys.set(key, []);
@@ -23,6 +33,11 @@ export default class UtilityResourceManager {
         await this.callListeners(key, resourceDataRaw);
     }
 
+    /**
+     * 
+     * @param {string} key of your choice 
+     * @param {function} callback to call when a resource generator or data is added
+     */
     async addResourceListener(key, callback) {
         if (!this.keyListeners.has(key)) {
             this.keyListeners.set(key, []);
@@ -38,6 +53,11 @@ export default class UtilityResourceManager {
         }
     }
 
+    /**
+     * 
+     * @param {string} key chosen 
+     * @param {function} callback handler originally registered
+     */
     removeResourceListener(key, callback) {
         if (this.keyListeners.has(key)) {
             const listeners = this.keyListeners.get(key);
