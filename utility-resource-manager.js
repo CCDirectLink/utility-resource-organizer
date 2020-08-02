@@ -54,9 +54,13 @@ export default class UtilityResourceManager {
     }
 
     async callListeners(key, data) {
-        for (const listener of this.keyListeners.get(key)) {
-            await this.callListener(listener, data);
+        if (this.keyListeners.has(key)) {
+            const listeners = this.keyListeners.get(key);
+            for (const listener of listeners) {
+                await this.callListener(listener, data);
+            }
         }
+
     }
 
     async callListener(listener, data) {
