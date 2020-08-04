@@ -8,7 +8,7 @@ export default class UtilityResourceMod {
         
         for (const [name, mod] of modloader.loadedMods) {
             try {
-                await mod.executeStage('registerResourceListener');
+                await mod.executeStage('registerResourceListeners');
             } catch (e) {
                 console.log('Mod', e, 'failed');
                 console.log(e.toString());
@@ -17,7 +17,7 @@ export default class UtilityResourceMod {
 
         for (const [name, mod] of modloader.loadedMods) {
             try {
-                await mod.executeStage('registerResourceGenerator');
+                await mod.executeStage('registerResourceGenerators');
             } catch (e) {
                 console.log('Mod', e, 'failed');
                 console.log(e.toString());

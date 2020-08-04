@@ -4,7 +4,7 @@ Placeholder name until I can think of a better one.
 
 ## How to use
 
-There should be either `registerResourceListener` and/or `registerResourceGenerator` as a method in your exported main class.
+There should be either `registerResourceListeners` and/or `registerResourceGenerators` as a method in your exported main class.
 
 ### registerResourceListener
 
