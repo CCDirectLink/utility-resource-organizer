@@ -16,4 +16,4 @@ This method should host the code that will do something when a generator (a func
 
 This method should contain the code of all generators for a mod.
 
-[Example](https://github.com/CCDirectLink/emilie/blob/master/emilie/main.js#L6-L14)
+[Example](https://github.com/ac2pic/emilie/blob/master/emilie/main.js#L6-L14)
