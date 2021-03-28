@@ -61,7 +61,7 @@ If a listener is added after a resource is added, then the listener will
 still receive the resource.  As a result, it is not an error to
 add resources with a key without any listener.
 
-[Producer Example](https://github.com/ac2pic/emilie/blob/master/main.js#L6-L14)
+[Producer Example](https://github.com/ac2pic/emilie/blob/master/src/main.js#L6-L14)
 
 ### Listeners
 
@@ -91,4 +91,4 @@ If a resource listener callback is added more than once, it will receive
 resources more than once. But `removeResourceListener()` will remove all occurence
 of them.
 
-[Listener Example](https://github.com/CCDirectLink/char-toolkit/blob/master/main.js#L8-L17)
+[Listener Example](https://github.com/CCDirectLink/char-toolkit/blob/master/src/main.js#L8-L17)
