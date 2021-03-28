@@ -91,4 +91,4 @@ If a resource listener callback is added more than once, it will receive
 resources more than once. But `removeResourceListener()` will remove all occurence
 of them.
 
-[Listener Example](https://github.com/CCDirectLink/char-toolkit/blob/master/src/main.js#L8-L17)
+[Listener Example](https://github.com/CCDirectLink/char-toolkit/blob/cac81973f5592d099affa1221b2ff82bad57da22/src/main.js#L7-L16)
