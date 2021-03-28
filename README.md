@@ -61,7 +61,7 @@ If a listener is added after a resource is added, then the listener will
 still receive the resource.  As a result, it is not an error to
 add resources with a key without any listener.
 
-[Producer Example](https://github.com/ac2pic/emilie/blob/master/src/main.js#L6-L14)
+[Producer Example](https://github.com/ac2pic/emilie/blob/132153246af5bff4ec83aa516ea9c24cc86a65d8/src/main.js#L12-L20)
 
 ### Listeners
 
